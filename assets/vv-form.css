@@ -1,0 +1,20 @@
+/* 微出国咨询表单（kit 同款，套用本站颜色变量） */
+.vv-ask{background:var(--tint)}
+.vv-ask h2{margin-top:0}
+.vv-ask .form{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px 18px;box-shadow:var(--shadow);max-width:640px}
+.vv-ask label{display:block;font-weight:600;font-size:15px;margin:14px 0 6px}
+.vv-ask label .opt{font-weight:400;color:var(--muted);font-size:13px}
+.vv-ask input,.vv-ask select,.vv-ask textarea{width:100%;font:16px/1.4 inherit;font-family:inherit;padding:11px 12px;border:1px solid var(--line);border-radius:10px;background:var(--ground);color:var(--text)}
+.vv-ask textarea{min-height:120px;resize:vertical}
+.vv-ask .hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.vv-ask button{margin-top:18px;width:100%;border:0;border-radius:999px;padding:14px;font-weight:700;font-size:16px;cursor:pointer;background:var(--gold);color:#1b1404}
+.vv-ask button[disabled]{opacity:.6}
+.vv-ask .form-msg{margin:14px 0 0;padding:10px 12px;border-radius:10px;font-size:15px;display:none}
+.vv-ask .form-msg.ok{display:block;background:#e8f7ee;color:#14532d}
+.vv-ask .form-msg.err{display:block;background:#fdecec;color:#7f1d1d}
+.vv-ask .privacy,.vv-ask .mailto{font-size:13px;color:var(--muted);margin:10px 0 0}
+.vv-brandline{border-bottom:1px solid rgba(255,255,255,.15);padding-bottom:14px;margin-bottom:14px}
+.vv-brandline a{display:inline-flex;align-items:center;gap:6px;text-decoration:none;color:inherit}
+.vv-brandline svg{width:26px;height:auto}
+.vv-brandline p{margin:6px 0 0}
+.vv-brandline .vv-sub{font-size:13px;opacity:.85}
