@@ -1,0 +1,110 @@
+/* 活期王深化版（2026-10-05）：在 site.css 之上加的组件。全部原生 HTML/CSS/SVG，不用图片。 */
+.hqw-name{color:var(--gold);white-space:nowrap}
+.sec .hqw-name{color:var(--coral)}
+.hero h1 .hqw-name{font-size:1.18em;letter-spacing:.04em;background:linear-gradient(90deg,#ffd77a,var(--gold) 60%,#ffb36b);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .sub-h{font-size:clamp(18px,4.6vw,24px);color:#fff;font-weight:700;margin:-4px 0 14px}
+
+/* 首屏三条理由 */
+.reasons{list-style:none;padding:0;margin:18px 0 18px;display:grid;gap:10px}
+.reasons li{display:grid;grid-template-columns:auto 1fr;gap:4px 14px;align-items:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-radius:14px;padding:12px 14px}
+.reasons b{font-size:clamp(26px,7vw,36px);color:var(--gold);font-weight:800;line-height:1.1;font-variant-numeric:tabular-nums;min-width:1.3em}
+.reasons span{font-size:14px;color:var(--on-ink-muted);line-height:1.5}
+.reasons span strong{color:#fff;font-size:16px;display:block}
+@media (min-width:900px){.reasons{grid-template-columns:repeat(3,1fr)}.reasons li{grid-template-columns:1fr}.reasons b{min-width:0}}
+
+.sub{font-size:20px;margin:28px 0 12px}
+.ico{font-size:26px;line-height:1;display:block;margin-bottom:8px}
+
+/* 每天利息（像万份收益） */
+.perday{margin:22px 0 0;background:var(--ink);color:var(--on-ink);border-radius:var(--radius);padding:18px 18px 10px;max-width:640px}
+.perday-head{color:var(--gold);font-weight:700;font-size:15px;margin-bottom:10px}
+.perday-row{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-bottom:1px dashed rgba(255,255,255,.18);font-variant-numeric:tabular-nums}
+.perday-row b{color:#fff;font-size:18px}
+.perday-row span{color:var(--on-ink-muted)}
+.perday .fine{color:var(--on-ink-muted);margin-top:10px}
+
+/* 对照表 */
+.vs-table td,.vs-table th{text-align:left;vertical-align:top;line-height:1.55}
+.vs-table thead th:last-child{background:var(--gold);color:#1b1404}
+.vs-table td.win{font-weight:700;color:var(--gain)}
+.vs-table{min-width:0}
+
+/* 中转站图 */
+.bridge-fig{margin:18px 0 22px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:12px;box-shadow:var(--shadow)}
+.bridge-svg{width:100%;height:auto;display:block}
+.bridge-svg .bank rect{fill:var(--tint);stroke:var(--line);stroke-width:2}
+.bridge-svg .t1{fill:var(--text);font-size:22px;font-weight:800;text-anchor:middle}
+.bridge-svg .t2{fill:var(--muted);font-size:16px;text-anchor:middle}
+.bridge-svg .hub circle{fill:var(--ink);stroke:var(--gold);stroke-width:4}
+.bridge-svg .h1{fill:var(--gold);font-size:32px;font-weight:800;text-anchor:middle}
+.bridge-svg .h2{fill:#f7f4ec;font-size:15px;text-anchor:middle}
+.bridge-svg .flow path{fill:none;stroke:var(--coral);stroke-width:3;stroke-dasharray:8 6;animation:flow 1.4s linear infinite}
+.bridge-svg .ah{fill:var(--coral)}
+.bridge-svg .cap{fill:var(--muted);font-size:16px;text-anchor:middle}
+@keyframes flow{to{stroke-dashoffset:-28}}
+@media (prefers-reduced-motion:reduce){.bridge-svg .flow path{animation:none}}
+
+/* CDIC 堆叠 */
+.rulebox h3{font-size:17px}
+.rulebox.warn{border-color:var(--coral);border-width:2px}
+.rulebox.warn h3{color:var(--coral)}
+.cdic-fig{margin:22px 0}
+.cdic-fig figcaption{font-weight:700;margin-bottom:10px}
+.stack{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.blk{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--ink);border-radius:12px;padding:10px 12px}
+.blk b{display:block;font-size:20px;font-variant-numeric:tabular-nums}
+.blk span{font-size:13px;color:var(--muted)}
+.blk.joint{border-left-color:var(--gold)}
+.blk.reg{border-left-color:var(--gain)}
+.blk.total{grid-column:1/-1;background:var(--ink);border-color:var(--ink)}
+.blk.total b{color:var(--gold);font-size:26px}
+.blk.total span{color:var(--on-ink-muted)}
+@media (min-width:900px){.stack{grid-template-columns:repeat(4,1fr)}}
+
+.honest{margin-top:22px}
+.ticks-dark li{color:var(--text)}
+.scenes h3::before{content:"";display:block;width:28px;height:4px;border-radius:2px;background:var(--coral);margin-bottom:10px}
+
+/* 无照片的顾问名片 */
+.person .avatar{width:64px;height:64px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--gold);color:#1b1404;font-weight:800;font-size:26px;flex:0 0 64px}
+.compliance{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px;margin-top:6px}
+
+/* 计算器 */
+.calc-box{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow);max-width:720px;margin:18px 0}
+.calc-box label{display:block;font-weight:700;font-size:15px;margin:10px 0 4px}
+.calc-box label output{float:right;color:var(--coral);font-variant-numeric:tabular-nums}
+.calc-box input[type=range]{width:100%;accent-color:var(--gold-deep)}
+.calc-box input[type=number]{width:8em;font:inherit;padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:var(--ground);color:var(--text)}
+.cr{position:relative;display:flex;justify-content:space-between;gap:10px;padding:12px 12px;margin-top:10px;border-radius:12px;background:var(--tint);overflow:hidden;font-variant-numeric:tabular-nums}
+.cr i{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,rgba(244,185,66,.45),rgba(232,96,60,.35));z-index:0}
+.cr-muted i{background:rgba(89,97,115,.25)}
+.cr span,.cr b{position:relative;z-index:1}
+.cr b{font-size:20px}
+.cr-diff{margin:12px 0 0;color:var(--muted)}
+.cr-diff b{color:var(--gain)}
+
+/* 到账时间线 */
+.flowline{list-style:none;counter-reset:f;padding:0;margin:8px 0 16px;display:grid;gap:10px}
+.flowline li{counter-increment:f;position:relative;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 14px 12px 54px}
+.flowline li::before{content:counter(f);position:absolute;left:12px;top:12px;width:30px;height:30px;border-radius:50%;background:var(--coral);color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center}
+.flowline li:last-child::before{content:"✓";background:var(--gain)}
+.flowline b{display:block}
+.flowline span{color:var(--muted);font-size:15px}
+@media (min-width:900px){.flowline{grid-template-columns:repeat(4,1fr)}}
+.promo-table caption{caption-side:bottom;text-align:left;padding:8px 2px}
+.promo-table th[scope=row]{white-space:nowrap}
+.listen-inline{margin-top:24px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px}
+.listen-inline h3{margin-bottom:.3em}
+.calc-box h3{margin-top:0}
+
+@media (max-width:640px){
+  .promo-table thead{display:none}
+  .promo-table,.promo-table tbody,.promo-table tr,.promo-table th,.promo-table td{display:block;width:100%}
+  .promo-table tr{border-bottom:2px solid var(--line);padding:8px 0}
+  .promo-table th[scope=row]{border:0;font-size:16px;padding:8px 10px 2px}
+  .promo-table td{border:0;padding:3px 10px;display:flex;justify-content:space-between;gap:12px;text-align:right}
+  .promo-table td::before{content:attr(data-label);color:var(--muted);font-weight:400;text-align:left;flex:0 0 auto}
+  .vs-table th,.vs-table td{font-size:14px;padding:9px 8px}
+}
+
+@media (max-width:640px){.hide-sm{display:none}.topbar{padding:6px 10px;font-size:13px}}
